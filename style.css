@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(27, 27, 27);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Fonts */
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+#logo {
+    width: 5%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-top: 0.5rem; 
+}
+
+ul {
+    display: flex;
+    gap: 2.5rem;
+    margin-right: 2rem;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+li a {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+    font-family: var(poppins-bold);
+}
