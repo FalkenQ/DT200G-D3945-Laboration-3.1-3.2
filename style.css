@@ -111,6 +111,7 @@ iframe {
 .question {
     font-family: var(--font-poppins);
     color: white;
+    font-style: italic;
     font-size: 1.25rem;
     width: 70%;
     text-align: center;
