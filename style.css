@@ -71,3 +71,55 @@ iframe {
     filter: drop-shadow(0px 4px 8px #000000);
     border-radius: 5px;
 }
+
+/* Questions */
+.questions-container {
+    background-color: rgb(71, 70, 70);
+    width: 90%;
+    margin: auto;
+    padding: 3rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.question-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.all-questions {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.question-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.question-1,
+.question-2,
+.question-3 {
+    padding: 1.25rem;
+    background-color:red;
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 8px #000000);
+}
+
+.question {
+    font-family: var(--font-poppins);
+    color: white;
+    font-size: 1.25rem;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+p {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    color: white;
+    width: 100%;
+}
