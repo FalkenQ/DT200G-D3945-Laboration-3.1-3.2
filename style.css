@@ -111,7 +111,8 @@ iframe {
 
 .question-1,
 .question-2,
-.question-3 {
+.question-3,
+.youtube-short {
     padding: 1.25rem;
     background-color:red;
     border-radius: 5px;
@@ -126,6 +127,11 @@ iframe {
     width: 70%;
     text-align: center;
     margin: auto;
+}
+
+.youtube-short {
+    display: grid;
+    place-items: center;
 }
 
 p {

@@ -7,7 +7,7 @@
         <title>Falkq video presentation</title>
 
         <!-- CSS -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="videobg.css">
     
         <!-- Favicon -->
         <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
@@ -31,10 +31,58 @@
         </header>
 
         <main>
-            <video autoplay muted loop poster="videos/freezeframe.jpg" class="bg-video">
-                <source src="videos/background.webm" type="video/webm">
-                <source src="videos/background.mp4" type="video/mp4">
-            </video>
+                <video autoplay muted loop poster="videos/freezeframe.jpg" class="bg-video">
+                    <source src="videos/background.webm" type="video/webm">
+                    <source src="videos/background.mp4" type="video/mp4">
+                </video>
+
+                <div class="text-container">
+                    <h2>Laboration 3.2</h2>
+                    <p>
+                        För att implementera min video som bakgrund har jag använt mig av HTML:s video element i komination med CSS grid. 
+                        Jag använder mig av grid-template-areas för att skapa och sen tilldela både videon och min text-container samma utrymme med 
+                        med grid-area och placera elementen ovanpå varandra.
+                    </p>
+                    <p>
+                        Med hjälp av z-index kan jag bestämma elemetens lagerordning. Sen använder jag place-items för att lägga till dem i slutet. 
+                        Jag gav även text-containerns bakgrund en delvis transparant bakgrund för att som gör att hela videon fortfarande är synlig bakom texte.
+                    </p>
+                    <p>
+                        Källor:<br>
+                        https://www.gomasuga.com/articles/best-practices-for-html-background-videos<br>
+                        https://www.youtube.com/watch?v=3Kf03veuJnc
+                    </p>
+                </div>
+
+                <div class="tiktok">
+
+                    <iframe height="578" width="325"
+                        src="https://www.tiktok.com/player/v1/7688710298487819542?embed_from=webapp_share&music_info=1&description=1&autoplay=0&muted=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share" 
+                        title="The only one to solo a upper rank | Song by @Kryd | #demonslayer #demonslayeredits #zenitsu #kimetsunoyaiba #tanjiro" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+
+                    <iframe height="578" width="325" 
+                        src="https://www.tiktok.com/player/v1/7676548190119775510?embed_from=webapp_share&music_info=1&description=1&autoplay=0&muted=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share" 
+                        title="Tiktok keeps removing the sound 😭 | Supernatural x Night Moves #samwinchester #deanwinchester #supernatural #castiel #spn" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+
+                    <iframe height="578" width="325" 
+                        src="https://www.tiktok.com/player/v1/7689434460948794646?embed_from=webapp_share&music_info=1&description=1&autoplay=0&muted=1" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; fullscreen; gyroscope; picture-in-picture; web-share" 
+                        title="Demon Slayer x Elements | Song by @JohnMichael howell | #demonslayer #demonslayeredits #kimetsunoyaiba #kny #animeedit" 
+                        allowfullscreen 
+                        loading="lazy">
+                    </iframe>
+                </div>
         </main>
     </body>
 </html>

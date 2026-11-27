@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(27, 27, 27);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(71, 70, 70);
+    margin: 1rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-areas: "stack";
+    place-items: end;
+}
+
+/* Video */
+.bg-video {
+    grid-area: stack;
+    z-index: -1;
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+}
+
+.text-container {
+    grid-area: stack;
+    z-index: 1;
+    background-color: #1d7dbd3f;
+}
+
+.tiktok {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    padding: 1.25rem;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+iframe {
+    border-radius: 5px;
+    filter: drop-shadow(0px 4px 8px #000000);
+}
+
+/* Fonts */
+:root {
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* :) */
+#logo {
+    width: 5%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-top: 0.5rem; 
+}
+
+h2 {
+    color: white;
+    font-family: var(--font-poppins);
+    font-size: 1.75rem;
+    filter: drop-shadow(0px 4px 8px #000000);
+    padding-left: 0.5rem;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+    padding: 0;
+    margin-right: 2rem;
+}
+
+li {
+    list-style-type: none;
+    color: white;
+}
+
+li a {
+    font-family: var(--font-poppins);
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    color: white;
+    width: 100%;
+    padding-left: 0.5rem;
+}
